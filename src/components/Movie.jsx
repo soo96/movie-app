@@ -1,3 +1,5 @@
+import styles from "../css/components/Movie.module.css";
+
 function Movie({
   title,
   coverImg,
@@ -7,25 +9,38 @@ function Movie({
   likeCnt,
   genres,
   trailerCode,
+  description,
+  bgImg,
 }) {
   return (
-    <div>
-      <img src={coverImg} alt={title} />
-      <h1>{title}</h1>
-      <ul>
-        <li>{`평점 : ${rating}`}</li>
-        <li>{`상영시간 : ${runtime}`}</li>
-        <li>{`❤ : ${likeCnt}`}</li>
-        <li>{`장르 : ${genres.toString()}`}</li>
-        <li>
-          <div>
-            <iframe
-              // className={style.traiiler}
-              src={`https://www.youtube.com/embed/${trailerCode}?mute=1&&autoplay=1`}
-            ></iframe>
-          </div>
-        </li>
-      </ul>
+    <div className={styles.container_box}>
+      <div className={styles.img_box}>
+        <img src={coverImg} alt={title} />
+      </div>
+      <div className={styles.text_box}>
+        <h1 className={styles.title}>{title}</h1>
+        <ul className={styles.text_list}>
+          <li className={styles.small_box}>
+            <span>{year} </span>
+            <span>{runtime} min</span>
+            <span>{`⭐ ${rating}`}</span>
+            <div>
+              <span className={styles.like}>❤ </span>
+              <span>{` ${likeCnt}`}</span>
+            </div>
+          </li>
+          <li className={styles.genres}>{`${genres
+            .map((g) => " " + g)
+            .toString()}`}</li>
+          <li className={styles.description}>{description.slice(0, 400)}...</li>
+        </ul>
+        <div>
+          <iframe
+            className={styles.traiiler}
+            src={`https://www.youtube.com/embed/${trailerCode}?mute=1&&autoplay=1`}
+          ></iframe>
+        </div>
+      </div>
     </div>
   );
 }

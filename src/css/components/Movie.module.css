@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Roboto+Mono:wght@300&display=swap");
+
+:root {
+  --main-font-fam: "Noto Sans KR", "Roboto Mono", monospace;
+}
+
+.container_box {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 0 auto;
+  font-family: var(--main-font-fam);
+
+  .text_box {
+    width: 40%;
+    height: 100%;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: #1a191d;
+
+    .title {
+      font-size: 2rem;
+      margin: 0;
+      font-family: var(--main-font-fam);
+    }
+
+    .text_list {
+      list-style: none;
+      padding-left: 0;
+      font-weight: 600;
+      li {
+        margin: 8px 0;
+        font-family: var(--main-font-fam);
+
+        .like {
+          color: crimson;
+        }
+      }
+
+      .year {
+        padding-left: 30px;
+      }
+
+      .description {
+        margin-top: 20px;
+        font-size: 1rem;
+      }
+
+      .small_box {
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: space-around;
+      }
+      .genres {
+      }
+    }
+
+    .traiiler {
+      margin-top: 10px;
+      width: 100%;
+      height: 30vh;
+    }
+  }
+}

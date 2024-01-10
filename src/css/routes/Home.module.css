@@ -2,7 +2,7 @@ body,
 html {
   width: auto;
   height: 100vh;
-  background-color: bisque;
+  background-color: #fbf7ff;
 }
 
 .container {
@@ -37,7 +37,7 @@ html {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #fff;
+  background: #fbf7ff;
   margin: -4px 0 0 -4px;
 }
 .lds-roller div:nth-child(1) {

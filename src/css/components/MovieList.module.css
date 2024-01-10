@@ -4,7 +4,7 @@
   box-sizing: border-box;
   text-align: center;
   background-color: initial;
-  border: 1px solid rgba(17, 16, 16, 0.1);
+  border: 1px solid rgba(30, 2C, 3E, 0.1);
   border-radius: 3%;
   box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.637);
   margin: 50px 0 50px 0;
@@ -24,7 +24,7 @@
     font-weight: 500;
     text-decoration: none;
     &:hover {
-      color: #6abf45be;
+      color: #9182ec;
       transition: all 0.4s;
     }
   }
