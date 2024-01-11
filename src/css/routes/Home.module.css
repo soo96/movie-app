@@ -2,13 +2,15 @@ body,
 html {
   width: auto;
   height: 100vh;
-  background-color: #fbf7ff;
+  background-color: white;
 }
 
 .container {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   .box {
     width: 60%;
@@ -37,7 +39,7 @@ html {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #fbf7ff;
+  background: black;
   margin: -4px 0 0 -4px;
 }
 .lds-roller div:nth-child(1) {

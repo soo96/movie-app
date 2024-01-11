@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
+
+.logo_container {
+  font-family: "Rubik Doodle Shadow", system-ui;
+  font-size: 70px;
+  width: 200px;
+  height: 70px;
+  margin: 30px auto;
+
+  .logo {
+    text-decoration: none;
+    color: #1a191d;
+    /* font-weight: 6000; */
+  }
+}

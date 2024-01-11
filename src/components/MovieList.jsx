@@ -4,23 +4,19 @@ import styles from "../css/components/MovieList.module.css";
 
 function MovieList({ id, coverImg, title, rating, genres, runtime }) {
   return (
-    <div className={styles.container}>
+    <Link className={styles.container} to={`/movie/${id}`}>
       <div>
         <img className={styles.poster} src={coverImg} alt={title} />
       </div>
-      <h2>
-        <Link className={styles.title} to={`/movie/${id}`}>
-          {title}
-        </Link>
-      </h2>
+      <h2 className={styles.title}>{title}</h2>
       <div className={styles.rating_runtime}>
         <span>⭐ {rating} / </span>
         <span>{runtime}분</span>
       </div>
       <div className={styles.genre}>
-        장르 : {genres.map((g) => " " + g).toString()}
+        {genres.map((g) => " " + g).toString()}
       </div>
-    </div>
+    </Link>
   );
 }
 

@@ -2,6 +2,7 @@
 
 :root {
   --main-font-fam: "Noto Sans KR", "Roboto Mono", monospace;
+  --main-font-color: black;
 }
 
 .container_box {
@@ -20,7 +21,7 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    color: #1a191d;
+    color: var(--main-font-color);
 
     .title {
       font-size: 2rem;
@@ -54,6 +55,7 @@
         font-size: 1.2rem;
         display: flex;
         justify-content: space-around;
+        padding-bottom: 20px;
       }
       .genres {
       }
